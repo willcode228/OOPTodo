@@ -1,0 +1,12 @@
+.todo__list{
+    max-height: 75%;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 768px){   
+    .todo__list{
+        /* min-height: 0px; */
+        /* max-height: 100%; */
+        overflow-y: visible;
+    }
+}

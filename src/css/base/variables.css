@@ -1,0 +1,18 @@
+:root{
+    /* COLOURS */
+    --brand-white: #fff;
+    --brand-black: #1D262C;
+    --brand-accent: #f3477a;
+    --brand-red: #EB5757;
+    --brand-yellow: #F2994A;
+    --brand-grey: #E0E0E0;
+    --brand-purple: #884CB2;
+    /* TRANSITION */
+    --fast-transition: 0.2s;
+    --main-transition: 0.4s;
+    /* FONT-SIZE */
+    --title: max(16px, min(32px, calc(100vw * 4 / 75)));
+    --text: max(14px, min(24px, calc(100vw * 4 / 75)));
+    /* BORDER */
+    --border: 0.5px solid var(--brand-grey);
+}

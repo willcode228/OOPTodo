@@ -1,0 +1,30 @@
+*,
+*::after,
+*:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+    user-select: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.critical{
+    color: var(--brand-red);
+}
+
+.normal{
+    color: var(--brand-yellow);
+}

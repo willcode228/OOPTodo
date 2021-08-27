@@ -1,0 +1,131 @@
+.list__task{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    transform-origin: left;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0px 20px 0px;
+    border-bottom: var(--border);
+    transition: var(--fast-transition);
+}
+.list__task span{
+    flex-grow: 1;
+}
+
+.list__task:hover .task__delete,
+.list__task:hover .task__change{
+    opacity: 1;
+}
+
+.task__btngroup{
+    min-width: 75px;
+    margin-left: 20px;
+}
+
+.task__delete,
+.task__change{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    opacity: 0;
+    padding: 5px;
+    transition: var(--fast-transition);
+}
+
+.task__change{
+    transition-delay: 0.1s;
+}
+.task__delete{
+    transition-delay: 0.2s;
+    margin-left: 10px;
+}
+
+.task__delete:hover,
+.task__change:hover{
+    color: var(--brand-red);
+}
+
+.list__task label{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+.list__task input{
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.circle-outside{
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--brand-accent);
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle-inside{
+    width: 0px;
+    height: 0px;
+    background: var(--brand-accent);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transition: var(--fast-transition);
+    transform: translate(-50%, -50%);
+}
+
+.list__task-uncomp.checked .circle-inside{
+    width: 0px;
+    height: 0px;
+}
+.list__task-comp .circle-inside{
+    width: 10px;
+    height: 10px;
+}
+
+.list__task-comp{
+    opacity: 0.3;
+}
+/* Animations */
+.list__task.list__task-uncomp.checked{
+    opacity: 0.3;
+}
+.list__task.list__task-uncomp.checked .circle-inside{
+    width: 10px;
+    height: 10px;
+}
+
+.list__task.list__task-comp.checked{
+    opacity: 1;
+}
+.list__task.list__task-comp.checked .circle-inside{
+    width: 0px;
+    height: 0px;
+}
+
+
+@media screen and (max-width: 768px){   
+    .task__delete,
+    .task__change{
+        margin: 0;
+        opacity: 1;
+    }
+    .task__btngroup{
+        min-width: 28px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
