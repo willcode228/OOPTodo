@@ -1,7 +1,20 @@
+@media (prefers-color-scheme: light) {
+    :root{
+        /* COLOURS */
+        --brand-white: #fff;
+        --brand-black: #1D262C;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        /* COLOURS */
+        --brand-white: #1D262C;
+        --brand-black: #fff;
+    }
+}
+
 :root{
-    /* COLOURS */
-    --brand-white: #fff;
-    --brand-black: #1D262C;
     --brand-accent: #f3477a;
     --brand-red: #EB5757;
     --brand-yellow: #F2994A;

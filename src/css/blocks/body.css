@@ -33,3 +33,12 @@ body{
         padding: 20px;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background: linear-gradient(115.67deg, #743653 7.14%, #113c69 99.42%);
+    }
+    .todo{
+        box-shadow: 0px 4px 40px 0px #113c69;
+    }
+}
